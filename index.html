@@ -15,7 +15,9 @@
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css"
     />
-    <link rel="stylesheet" href="./css/styles.css" />
+    <link rel="stylesheet" href="./css/styles-adaptive.css" />
+    <link rel="stylesheet" href="./css/tablet.css" />
+    <link rel="stylesheet" href="./css/desktop.css" />
   </head>
   <body>
     <header class="shadow-header">
@@ -46,11 +48,91 @@
             >
           </li>
         </ul>
+        <button
+          type="button"
+          class="menu-button"
+          aria-controls="menu-container"
+          data-menu-open
+        >
+          <svg width="32" height="22" aria-label="switch mobile menu">
+            <use
+              class="icon-menu"
+              href="./image/icons.svg#icon-hamburger"
+            ></use>
+          </svg>
+        </button>
+      </div>
+      <div class="menu-container is-hidden" id="menu-container" data-menu>
+        <div class="menu-section">
+          <button
+            type="button"
+            class="close-button"
+            aria-controls="menu-container"
+            data-menu-close
+          >
+            <svg class="burger-close">
+              <use
+                class="icon-close"
+                href="./image/icons.svg#icon-btnx"
+              ></use>
+            </svg>
+          </button>
+          <ul class="mobile-menu">
+            <li class="item">
+              <a class="menu-link current" href="index.html">Studio</a>
+            </li>
+            <li class="item">
+              <a class="menu-link" href="portfolio.html">Portfolio</a>
+            </li>
+            <li class="item">
+              <a class="menu-link" href="">Contacts</a>
+            </li>
+          </ul>
+
+          <div class="mobile-connect">
+            <a class="contacts-tel-burger" href="tel:+11000111-11-11"
+              >+11 (000) 111-11-11</a
+            >
+            <a class="contacts" href="mailto:info@devstudio.com"
+              >info@devstudio.com</a
+            >
+            <ul class="mobile-list">
+              <li class="mobile-social">
+                <a href="" class="social-link">
+                  <svg class="social-icon">
+                    <use href="./image/icons.svg#icon-instagram"></use>
+                  </svg>
+                </a>
+              </li>
+              <li class="mobile-social">
+                <a href="" class="social-link">
+                  <svg class="social-icon">
+                    <use href="./image/icons.svg#icon-twitter"></use>
+                  </svg>
+                </a>
+              </li>
+              <li class="mobile-social">
+                <a href="" class="social-link">
+                  <svg class="social-icon">
+                    <use href="./image/icons.svg#icon-facebook"></use>
+                  </svg>
+                </a>
+              </li>
+              <li class="mobile-social">
+                <a href="" class="social-link">
+                  <svg class="social-icon">
+                    <use href="./image/icons.svg#icon-linkedin"></use>
+                  </svg>
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
       </div>
     </header>
     <main>
       <section class="hero">
-        <h1 class="hero-title">Effective Solutions for Your Business</h1>
+        <h1 class="hero-title">Effective Solutions For Your Business</h1>
         <button type="button" class="button" data-modal-open>
           Order Service
         </button>
@@ -135,13 +217,17 @@
         </div>
       </section>
       <section class="section team">
-        <div class="container">
+        <div class="container container-tablet">
           <h2 class="section-title">Our team</h2>
           <ul class="team-list list">
             <li class="item">
               <img
                 src="./image/Mark-Guerrero.jpg"
                 alt="Mark Guerrero"
+                srcset="
+                  ./image/Mark-Guerrero.jpg    1x,
+                  ./image/Mark-Guerrero-2x.jpg 2x
+                "
                 width="264"
               />
               <div class="team-position">
@@ -182,7 +268,12 @@
               </div>
             </li>
             <li class="item">
-              <img src="./image/Tom-Ford.jpg" alt="Tom Ford" width="264" />
+              <img
+                src="./image/Tom-Ford.jpg"
+                alt="Tom Ford"
+                srcset="./image/Tom-Ford.jpg 1x, ./image/Tom-Ford-2x.jpg 2x"
+                width="264"
+              />
               <div class="team-position">
                 <h3 class="title">Tom Ford</h3>
                 <p class="team-text">Frontend Developer</p>
@@ -224,6 +315,10 @@
               <img
                 src="./image/Camila-Garcia.jpg"
                 alt="Camila Garcia"
+                srcset="
+                  ./image/Camila-Garcia.jpg    1x,
+                  ./image/Camila-Garcia-2x.jpg 2x
+                "
                 width="264"
               />
               <div class="team-position">
@@ -267,6 +362,10 @@
               <img
                 src="./image/Daniel-Wilson.jpg"
                 alt="Daniel Wilson"
+                srcset="
+                  ./image/Daniel-Wilson.jpg    1x,
+                  ./image/Daniel-Wilson-2x.jpg 2x
+                "
                 width="264"
               />
               <div class="team-position">
@@ -310,7 +409,7 @@
         </div>
       </section>
       <section class="section section-customers">
-        <div class="container">
+        <div class="container container-tablet">
           <h2 class="section-title">Customers</h2>
           <ul class="customers-list list">
             <li class="item">
@@ -360,7 +459,7 @@
       </section>
     </main>
     <footer class="footer-elements">
-      <div class="container footer">
+      <div class="container footer container-tablet">
         <div class="information">
           <a class="studio-footer" href="./index.html">
             <span class="logo">Web</span>Studio
@@ -429,9 +528,7 @@
             <use href="./image/icons.svg#icon-btnx"></use>
           </svg>
         </button>
-        <p class="modal-title">
-          Leave your contacts and we will call you back
-        </p>
+        <p class="modal-title">Leave your contacts and we will call you back</p>
         <form class="form">
           <div class="form-field">
             <label for="name" class="label-field">Name</label>
@@ -486,5 +583,6 @@
       </div>
     </div>
     <script src="./js/modal.js"></script>
+    <script src="./js/menu-mobile.js"></script>
   </body>
 </html>
