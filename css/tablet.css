@@ -33,6 +33,9 @@
     .site-nav {
         margin-left: 123px;
     }
+    .connect + .connect {
+        margin-top: 4px;
+    }
     .list-adress .connect-link {
         font-size: 12px;
         line-height: 1.33;

@@ -25,7 +25,7 @@
     .hero {
         padding-top: 188px;
         padding-bottom: 188px;
-        width: 1200px;
+        width: 1440px;
         background-image: linear-gradient(to right,
                         rgba(46, 47, 66, 0.7),
                         rgba(46, 47, 66, 0.7)),
@@ -116,9 +116,11 @@
 
 
     }
+    .footer-mail input {
+        width: 264px;
+    }
     .footer-subscribe {
-         width: 453px;
-         margin-left: 80px;
+        margin-left: 80px;
     }
 
     .footer-form {
