@@ -1098,6 +1098,10 @@ textarea {
                     rgba(46, 47, 66, 0.7),
                     rgba(46, 47, 66, 0.7)),
                 url("../image/hero-mob.jpg");
+        background-image: -webkit-gradient (to right,
+                    rgba(46, 47, 66, 0.7),
+                    rgba(46, 47, 66, 0.7)),
+                url("../image/hero-mob.jpg");
     }
         @media (min-device-pixel-ratio: 2),
         (min-resolution: 192dpi),
