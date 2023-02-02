@@ -36,7 +36,10 @@
             (min-resolution: 192dpi),
             (min-resolution: 2dppx) {
                 .hero {
-                    background-image: url("../image/people-office-2x.jpg");
+                    background-image: linear-gradient(to right,
+                            rgba(46, 47, 66, 0.7),
+                            rgba(46, 47, 66, 0.7)),
+                             url("../image/people-office-2x.jpg");
                 }
     }
     .feature-list,
