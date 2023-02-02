@@ -848,7 +848,10 @@ textarea {
         width: 40px;
         height: 40px;
     }
-    
+    .mobile-list .social-icon {
+        width: 24px;
+        height: 24px;
+    }
     .close-button {
         width: 24px;
         height: 24px;
@@ -1072,6 +1075,10 @@ textarea {
         display: block;
     width: 40px;
         height: 40px;
+    }
+    .mobile-list .social-icon {
+        width: 24px;
+        height: 24px;
     }
 
     .close-button {
