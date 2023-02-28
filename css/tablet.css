@@ -20,6 +20,22 @@
     .list-adress {
         display: block;
     }
+
+    /* PORTFOLIO */
+     .project-section {
+     padding-top: 64px;
+     padding-bottom: 96px;
+    }
+    .filter-btn {
+    margin-bottom: 64px;
+    }
+    .project-list {
+        justify-content: space-between;
+    }
+    .project-list .item {
+        width: calc((100% - 12 * 2) / 2);
+    }
+ 
 }
     
 @media screen and (min-width: 768px) and (max-width: 1199px) {
@@ -120,4 +136,10 @@
         width: 264px;
         margin-right: 24px;
     }
+
+    /* PORTFOLIO */
+           .project-list .item:not(:last-child) {
+               margin-bottom: 72px;
+    
+           }
 }

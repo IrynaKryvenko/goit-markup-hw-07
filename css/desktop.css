@@ -133,5 +133,23 @@
     .footer-mail {
          margin-right: 24px;
     }
+
+    /* PORTFOLIO */
+    .project-section {
+        padding-top: 96px;
+        padding-bottom: 120px;
+    }
+    
+    .filter-btn {
+        margin-bottom: 72px;
+    }
+    .project-list .item {
+        width: calc((100% - 12 * 4) / 3);
+    }
+    
+    .project-list .item:nth-child(-n+6) {
+        margin-bottom: 48px;
+    
+    }
 }
 
